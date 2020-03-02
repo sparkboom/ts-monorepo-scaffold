@@ -1,0 +1,5 @@
+export const CONTENT__SET = 'CONTENT__SET';
+export const CONTENT__LOAD = 'CONTENT__LOAD';
+export const CONTENT__LOAD_SUCCESS = 'CONTENT__LOAD_SUCCESS';
+export const CONTENT__LOAD_FAIL = 'CONTENT__LOAD_FAIL';
+export const CONTENT__LOAD_WARN = 'CONTENT__LOAD_WARN';

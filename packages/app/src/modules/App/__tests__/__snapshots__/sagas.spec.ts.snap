@@ -1,0 +1,77 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App > Sagas appInitSaga should match snapshot 1`] = `
+Object {
+  "put": Array [
+    Object {
+      "@@redux-saga/IO": true,
+      "combinator": false,
+      "payload": Object {
+        "action": Object {
+          "correlationId": "%%APP_NAME%%_KERNEL",
+          "payload": Object {
+            "check": "config",
+            "error": null,
+            "status": "APP_CHECK__IN_PROGRESS",
+          },
+          "type": "APP__SET_CHECK_STATUS",
+        },
+        "channel": undefined,
+      },
+      "type": "PUT",
+    },
+    Object {
+      "@@redux-saga/IO": true,
+      "combinator": false,
+      "payload": Object {
+        "action": Object {
+          "correlationId": "%%APP_NAME%%_KERNEL",
+          "type": "CONFIG__LOAD",
+        },
+        "channel": undefined,
+      },
+      "type": "PUT",
+    },
+    Object {
+      "@@redux-saga/IO": true,
+      "combinator": false,
+      "payload": Object {
+        "action": Object {
+          "correlationId": "%%APP_NAME%%_KERNEL",
+          "type": "CONTENT__LOAD",
+        },
+        "channel": undefined,
+      },
+      "type": "PUT",
+    },
+    Object {
+      "@@redux-saga/IO": true,
+      "combinator": false,
+      "payload": Object {
+        "action": Object {
+          "correlationId": "%%APP_NAME%%_KERNEL",
+          "type": "CONFIG__FEATURE_TOGGLES_LOAD",
+        },
+        "channel": undefined,
+      },
+      "type": "PUT",
+    },
+  ],
+}
+`;
+
+exports[`App > Sagas appLoadSaga should match snapshot if app is ready 1`] = `
+Object {
+  "select": Array [
+    Object {
+      "@@redux-saga/IO": true,
+      "combinator": false,
+      "payload": Object {
+        "args": Array [],
+        "selector": "@@redux-saga-test-plan/json/function/<anonymous>",
+      },
+      "type": "SELECT",
+    },
+  ],
+}
+`;

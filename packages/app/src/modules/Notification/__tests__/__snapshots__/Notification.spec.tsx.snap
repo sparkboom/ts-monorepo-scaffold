@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Notification > Notification App Component should match snapshot when rendering a success notification 1`] = `
+<ToastContainer
+  className="my-class"
+>
+  <Toast
+    assistiveText={
+      Object {
+        "closeButton": "{text @ common.notification.closeButton.assistive}",
+      }
+    }
+    labels={
+      Object {
+        "details": "These are the success details here",
+        "heading": "This is a success heading",
+      }
+    }
+    onRequestClose={[Function]}
+    variant="success"
+  />
+</ToastContainer>
+`;
+
+exports[`Notification > Notification App Component should match snapshot when rendering an error notification 1`] = `
+<ToastContainer
+  className="my-class"
+>
+  <Toast
+    assistiveText={
+      Object {
+        "closeButton": "{text @ common.notification.closeButton.assistive}",
+      }
+    }
+    labels={
+      Object {
+        "details": "Scenario details here",
+        "heading": "An error has occured",
+      }
+    }
+    onRequestClose={[Function]}
+    variant="error"
+  />
+</ToastContainer>
+`;

@@ -1,0 +1,324 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Config > Sagas loadConfigSaga should match snapshot for Marketing Cloud platform 1`] = `
+Object {
+  "call": Array [
+    Object {
+      "@@redux-saga/IO": true,
+      "combinator": false,
+      "payload": Object {
+        "args": Array [
+          Object {
+            "correlationId": "CORRELATION_ID",
+            "type": "CONFIG__LOAD",
+          },
+        ],
+        "context": null,
+        "fn": "@@redux-saga-test-plan/json/function/getWebApi",
+      },
+      "type": "CALL",
+    },
+    Object {
+      "@@redux-saga/IO": true,
+      "combinator": false,
+      "payload": Object {
+        "args": Array [],
+        "context": Object {
+          "config": "@@redux-saga-test-plan/json/function/config",
+        },
+        "fn": "@@redux-saga-test-plan/json/function/config",
+      },
+      "type": "CALL",
+    },
+    Object {
+      "@@redux-saga/IO": true,
+      "combinator": false,
+      "payload": Object {
+        "args": Array [
+          Object {
+            "correlationId": "CORRELATION_ID",
+            "type": "CONFIG__LOAD",
+          },
+        ],
+        "context": null,
+        "fn": "@@redux-saga-test-plan/json/function/getQueryApi",
+      },
+      "type": "CALL",
+    },
+    Object {
+      "@@redux-saga/IO": true,
+      "combinator": false,
+      "payload": Object {
+        "args": Array [],
+        "context": Object {
+          "getCapabilities": "@@redux-saga-test-plan/json/function/getCapabilities",
+        },
+        "fn": "@@redux-saga-test-plan/json/function/getCapabilities",
+      },
+      "type": "CALL",
+    },
+  ],
+  "put": Array [
+    Object {
+      "@@redux-saga/IO": true,
+      "combinator": false,
+      "payload": Object {
+        "action": Object {
+          "correlationId": "CORRELATION_ID",
+          "payload": Object {
+            "details": Object {
+              "status": "IN_PROGRESS",
+            },
+            "message": null,
+            "relatedAction": Object {
+              "correlationId": "CORRELATION_ID",
+              "type": "CONFIG__LOAD",
+            },
+          },
+          "type": "CONFIG__LOAD_STATUS",
+        },
+        "channel": undefined,
+      },
+      "type": "PUT",
+    },
+    Object {
+      "@@redux-saga/IO": true,
+      "combinator": false,
+      "payload": Object {
+        "action": Object {
+          "correlationId": "CORRELATION_ID",
+          "payload": Object {
+            "option1": true,
+          },
+          "type": "CONFIG__SET",
+        },
+        "channel": undefined,
+      },
+      "type": "PUT",
+    },
+    Object {
+      "@@redux-saga/IO": true,
+      "combinator": false,
+      "payload": Object {
+        "action": Object {
+          "correlationId": "CORRELATION_ID",
+          "payload": Object {
+            "platform": "MARKETING_CLOUD",
+          },
+          "type": "CONFIG__SET",
+        },
+        "channel": undefined,
+      },
+      "type": "PUT",
+    },
+    Object {
+      "@@redux-saga/IO": true,
+      "combinator": false,
+      "payload": Object {
+        "action": Object {
+          "correlationId": "CORRELATION_ID",
+          "payload": Object {
+            "details": null,
+            "message": null,
+            "relatedAction": Object {
+              "correlationId": "CORRELATION_ID",
+              "type": "CONFIG__LOAD",
+            },
+          },
+          "type": "CONFIG__LOAD_SUCCESS",
+        },
+        "channel": undefined,
+      },
+      "type": "PUT",
+    },
+  ],
+}
+`;
+
+exports[`Config > Sagas loadConfigSaga should match snapshot for Sales Cloud platform 1`] = `
+Object {
+  "call": Array [
+    Object {
+      "@@redux-saga/IO": true,
+      "combinator": false,
+      "payload": Object {
+        "args": Array [
+          Object {
+            "correlationId": "CORRELATION_ID",
+            "type": "CONFIG__LOAD",
+          },
+        ],
+        "context": null,
+        "fn": "@@redux-saga-test-plan/json/function/getWebApi",
+      },
+      "type": "CALL",
+    },
+    Object {
+      "@@redux-saga/IO": true,
+      "combinator": false,
+      "payload": Object {
+        "args": Array [],
+        "context": Object {
+          "config": "@@redux-saga-test-plan/json/function/config",
+        },
+        "fn": "@@redux-saga-test-plan/json/function/config",
+      },
+      "type": "CALL",
+    },
+    Object {
+      "@@redux-saga/IO": true,
+      "combinator": false,
+      "payload": Object {
+        "args": Array [
+          Object {
+            "correlationId": "CORRELATION_ID",
+            "type": "CONFIG__LOAD",
+          },
+        ],
+        "context": null,
+        "fn": "@@redux-saga-test-plan/json/function/getQueryApi",
+      },
+      "type": "CALL",
+    },
+    Object {
+      "@@redux-saga/IO": true,
+      "combinator": false,
+      "payload": Object {
+        "args": Array [],
+        "context": Object {
+          "getCapabilities": "@@redux-saga-test-plan/json/function/getCapabilities",
+        },
+        "fn": "@@redux-saga-test-plan/json/function/getCapabilities",
+      },
+      "type": "CALL",
+    },
+  ],
+  "put": Array [
+    Object {
+      "@@redux-saga/IO": true,
+      "combinator": false,
+      "payload": Object {
+        "action": Object {
+          "correlationId": "CORRELATION_ID",
+          "payload": Object {
+            "details": Object {
+              "status": "IN_PROGRESS",
+            },
+            "message": null,
+            "relatedAction": Object {
+              "correlationId": "CORRELATION_ID",
+              "type": "CONFIG__LOAD",
+            },
+          },
+          "type": "CONFIG__LOAD_STATUS",
+        },
+        "channel": undefined,
+      },
+      "type": "PUT",
+    },
+    Object {
+      "@@redux-saga/IO": true,
+      "combinator": false,
+      "payload": Object {
+        "action": Object {
+          "correlationId": "CORRELATION_ID",
+          "payload": Object {
+            "option1": true,
+          },
+          "type": "CONFIG__SET",
+        },
+        "channel": undefined,
+      },
+      "type": "PUT",
+    },
+    Object {
+      "@@redux-saga/IO": true,
+      "combinator": false,
+      "payload": Object {
+        "action": Object {
+          "correlationId": "CORRELATION_ID",
+          "payload": Object {
+            "platform": "SALES_CLOUD",
+          },
+          "type": "CONFIG__SET",
+        },
+        "channel": undefined,
+      },
+      "type": "PUT",
+    },
+    Object {
+      "@@redux-saga/IO": true,
+      "combinator": false,
+      "payload": Object {
+        "action": Object {
+          "correlationId": "CORRELATION_ID",
+          "payload": Object {
+            "details": null,
+            "message": null,
+            "relatedAction": Object {
+              "correlationId": "CORRELATION_ID",
+              "type": "CONFIG__LOAD",
+            },
+          },
+          "type": "CONFIG__LOAD_SUCCESS",
+        },
+        "channel": undefined,
+      },
+      "type": "PUT",
+    },
+  ],
+}
+`;
+
+exports[`Config > Sagas loadFeatureTogglesSaga should match the snapshot 1`] = `
+Object {
+  "call": Array [
+    Object {
+      "@@redux-saga/IO": true,
+      "combinator": false,
+      "payload": Object {
+        "args": Array [
+          Object {
+            "correlationId": "CORRELATION_ID",
+            "type": "CONFIG__FEATURE_TOGGLES_LOAD",
+          },
+        ],
+        "context": null,
+        "fn": "@@redux-saga-test-plan/json/function/getWebApi",
+      },
+      "type": "CALL",
+    },
+    Object {
+      "@@redux-saga/IO": true,
+      "combinator": false,
+      "payload": Object {
+        "args": Array [],
+        "context": Object {
+          "featureToggles": "@@redux-saga-test-plan/json/function/featureToggles",
+        },
+        "fn": "@@redux-saga-test-plan/json/function/featureToggles",
+      },
+      "type": "CALL",
+    },
+  ],
+  "put": Array [
+    Object {
+      "@@redux-saga/IO": true,
+      "combinator": false,
+      "payload": Object {
+        "action": Object {
+          "correlationId": "CORRELATION_ID",
+          "payload": Object {
+            "featureToggles": Object {
+              "feature1": true,
+            },
+          },
+          "type": "CONFIG__FEATURE_TOGGLES_SET",
+        },
+        "channel": undefined,
+      },
+      "type": "PUT",
+    },
+  ],
+}
+`;

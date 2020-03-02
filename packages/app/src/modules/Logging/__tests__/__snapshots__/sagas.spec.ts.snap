@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Logging > Sagas Log Saga should match the snapshot if content was successfully logged to browser 1`] = `
+Object {
+  "call": Array [
+    Object {
+      "@@redux-saga/IO": true,
+      "combinator": false,
+      "payload": Object {
+        "args": Array [
+          Object {},
+        ],
+        "context": null,
+        "fn": "@@redux-saga-test-plan/json/function/getTimeStamp",
+      },
+      "type": "CALL",
+    },
+    Object {
+      "@@redux-saga/IO": true,
+      "combinator": false,
+      "payload": Object {
+        "args": Array [
+          Object {
+            "longUtc": "2019-10-4 20:39:58.328",
+            "msSinceLaunch": "+45 ms",
+            "shortLocal": "19-10-4 15:39:58.328",
+          },
+          "INFO",
+          "LOG.CTX",
+          "FAKE LOG MESSAGE",
+          null,
+          Array [
+            Object {
+              "details": "Fake Details",
+            },
+          ],
+        ],
+        "context": null,
+        "fn": "@@redux-saga-test-plan/json/function/<anonymous>",
+      },
+      "type": "CALL",
+    },
+  ],
+}
+`;

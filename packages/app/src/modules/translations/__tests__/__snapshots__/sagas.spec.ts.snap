@@ -1,0 +1,233 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Translations > Sagas getTextSaga should match snapshot 1`] = `
+Object {
+  "select": Array [
+    Object {
+      "@@redux-saga/IO": true,
+      "combinator": false,
+      "payload": Object {
+        "args": Array [],
+        "selector": "@@redux-saga-test-plan/json/function/<anonymous>",
+      },
+      "type": "SELECT",
+    },
+    Object {
+      "@@redux-saga/IO": true,
+      "combinator": false,
+      "payload": Object {
+        "args": Array [],
+        "selector": "@@redux-saga-test-plan/json/function/<anonymous>",
+      },
+      "type": "SELECT",
+    },
+  ],
+}
+`;
+
+exports[`Translations > Sagas loadTranslationsSaga should match snapshot 1`] = `
+Object {
+  "call": Array [
+    Object {
+      "@@redux-saga/IO": true,
+      "combinator": false,
+      "payload": Object {
+        "args": Array [
+          Object {
+            "correlationId": "FAKE_CORRELATION_ID",
+            "payload": Object {
+              "cultureCode": "es",
+            },
+            "type": "TRANSLATIONS__LOAD",
+          },
+        ],
+        "context": null,
+        "fn": "@@redux-saga-test-plan/json/function/matchLocaleSaga",
+      },
+      "type": "CALL",
+    },
+    Object {
+      "@@redux-saga/IO": true,
+      "combinator": false,
+      "payload": Object {
+        "args": Array [
+          Object {
+            "correlationId": "FAKE_CORRELATION_ID",
+            "payload": Object {
+              "cultureCode": "es",
+            },
+            "type": "TRANSLATIONS__LOAD",
+          },
+        ],
+        "context": null,
+        "fn": "@@redux-saga-test-plan/json/function/getWebApi",
+      },
+      "type": "CALL",
+    },
+    Object {
+      "@@redux-saga/IO": true,
+      "combinator": false,
+      "payload": Object {
+        "args": Array [],
+        "context": Object {
+          "esTexts": "@@redux-saga-test-plan/json/function/mockConstructor",
+        },
+        "fn": "@@redux-saga-test-plan/json/function/mockConstructor",
+      },
+      "type": "CALL",
+    },
+  ],
+  "put": Array [
+    Object {
+      "@@redux-saga/IO": true,
+      "combinator": false,
+      "payload": Object {
+        "action": Object {
+          "correlationId": "FAKE_CORRELATION_ID",
+          "payload": Object {
+            "es": Object {
+              "label": "botón cancelar",
+            },
+          },
+          "type": "TRANSLATIONS__SET",
+        },
+        "channel": undefined,
+      },
+      "type": "PUT",
+    },
+  ],
+  "select": Array [
+    Object {
+      "@@redux-saga/IO": true,
+      "combinator": false,
+      "payload": Object {
+        "args": Array [],
+        "selector": "@@redux-saga-test-plan/json/function/<anonymous>",
+      },
+      "type": "SELECT",
+    },
+    Object {
+      "@@redux-saga/IO": true,
+      "combinator": false,
+      "payload": Object {
+        "args": Array [],
+        "selector": "@@redux-saga-test-plan/json/function/<anonymous>",
+      },
+      "type": "SELECT",
+    },
+    Object {
+      "@@redux-saga/IO": true,
+      "combinator": false,
+      "payload": Object {
+        "args": Array [],
+        "selector": "@@redux-saga-test-plan/json/function/<anonymous>",
+      },
+      "type": "SELECT",
+    },
+  ],
+}
+`;
+
+exports[`Translations > Sagas matchLocaleSaga should match snapshot when a fallback locale is used 1`] = `
+Object {
+  "put": Array [
+    Object {
+      "@@redux-saga/IO": true,
+      "combinator": false,
+      "payload": Object {
+        "action": Object {
+          "correlationId": "FAKE_CORRELATION_ID",
+          "payload": Object {
+            "details": Object {
+              "cultureCode": "es-xl",
+              "fallbackLocale": "en",
+            },
+            "message": "The desired locale 'es-xl' is not available, fallback locale 'en' proposed instead",
+            "relatedAction": Object {
+              "correlationId": "FAKE_CORRELATION_ID",
+              "payload": Object {
+                "cultureCode": "es-xl",
+              },
+              "type": "TRANSLATIONS__LOAD",
+            },
+          },
+          "type": "TRANSLATIONS__LOAD_WARN",
+        },
+        "channel": undefined,
+      },
+      "type": "PUT",
+    },
+  ],
+  "select": Array [
+    Object {
+      "@@redux-saga/IO": true,
+      "combinator": false,
+      "payload": Object {
+        "args": Array [],
+        "selector": "@@redux-saga-test-plan/json/function/<anonymous>",
+      },
+      "type": "SELECT",
+    },
+    Object {
+      "@@redux-saga/IO": true,
+      "combinator": false,
+      "payload": Object {
+        "args": Array [],
+        "selector": "@@redux-saga-test-plan/json/function/<anonymous>",
+      },
+      "type": "SELECT",
+    },
+  ],
+}
+`;
+
+exports[`Translations > Sagas matchLocaleSaga should match snapshot when a matching locale is found 1`] = `
+Object {
+  "select": Array [
+    Object {
+      "@@redux-saga/IO": true,
+      "combinator": false,
+      "payload": Object {
+        "args": Array [],
+        "selector": "@@redux-saga-test-plan/json/function/<anonymous>",
+      },
+      "type": "SELECT",
+    },
+  ],
+}
+`;
+
+exports[`Translations > Sagas useTranslationSaga should match snapshot 1`] = `
+Object {
+  "put": Array [
+    Object {
+      "@@redux-saga/IO": true,
+      "combinator": false,
+      "payload": Object {
+        "action": Object {
+          "correlationId": "FAKE_CORRELATION_ID",
+          "payload": Object {
+            "formats": undefined,
+            "locale": "en",
+            "messages": Object {},
+          },
+          "type": "@@intl/UPDATE",
+        },
+        "channel": undefined,
+      },
+      "type": "PUT",
+    },
+  ],
+  "select": Array [
+    Object {
+      "@@redux-saga/IO": true,
+      "combinator": false,
+      "payload": Object {
+        "args": Array [],
+        "selector": "@@redux-saga-test-plan/json/function/<anonymous>",
+      },
+      "type": "SELECT",
+    },
+  ],
+}
+`;

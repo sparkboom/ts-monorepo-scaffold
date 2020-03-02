@@ -1,0 +1,158 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Api > Sagas Get Command Api Saga should match snapshot if available 1`] = `
+Object {
+  "select": Array [
+    Object {
+      "@@redux-saga/IO": true,
+      "combinator": false,
+      "payload": Object {
+        "args": Array [],
+        "selector": "@@redux-saga-test-plan/json/function/<anonymous>",
+      },
+      "type": "SELECT",
+    },
+  ],
+}
+`;
+
+exports[`Api > Sagas Get Query Api Saga should match snapshot if available 1`] = `
+Object {
+  "select": Array [
+    Object {
+      "@@redux-saga/IO": true,
+      "combinator": false,
+      "payload": Object {
+        "args": Array [],
+        "selector": "@@redux-saga-test-plan/json/function/<anonymous>",
+      },
+      "type": "SELECT",
+    },
+  ],
+}
+`;
+
+exports[`Api > Sagas Get Web Api Saga should match snapshot if available 1`] = `
+Object {
+  "select": Array [
+    Object {
+      "@@redux-saga/IO": true,
+      "combinator": false,
+      "payload": Object {
+        "args": Array [],
+        "selector": "@@redux-saga-test-plan/json/function/<anonymous>",
+      },
+      "type": "SELECT",
+    },
+  ],
+}
+`;
+
+exports[`Api > Sagas Refresh Token Saga should match snapshot when token has successfully refreshed 1`] = `
+Object {
+  "call": Array [
+    Object {
+      "@@redux-saga/IO": true,
+      "combinator": false,
+      "payload": Object {
+        "args": Array [],
+        "context": Object {
+          "authenticationRefreshToken": "@@redux-saga-test-plan/json/function/authenticationRefreshToken",
+        },
+        "fn": "@@redux-saga-test-plan/json/function/authenticationRefreshToken",
+      },
+      "type": "CALL",
+    },
+    Object {
+      "@@redux-saga/IO": true,
+      "combinator": false,
+      "payload": Object {
+        "args": Array [
+          "FAKE_JWT",
+          3600,
+        ],
+        "context": null,
+        "fn": "@@redux-saga-test-plan/json/function/createToken",
+      },
+      "type": "CALL",
+    },
+  ],
+  "put": Array [
+    Object {
+      "@@redux-saga/IO": true,
+      "combinator": false,
+      "payload": Object {
+        "action": Object {
+          "correlationId": "CORRELATION_ID",
+          "payload": Object {
+            "context": "API.SAGAS",
+            "date": Object {},
+            "details": Array [
+              undefined,
+            ],
+            "level": "DEBUG",
+            "message": "Token refresh start",
+          },
+          "type": "LOGGING__SUBMIT",
+        },
+        "channel": undefined,
+      },
+      "type": "PUT",
+    },
+    Object {
+      "@@redux-saga/IO": true,
+      "combinator": false,
+      "payload": Object {
+        "action": Object {
+          "correlationId": "CORRELATION_ID",
+          "payload": Object {
+            "expiryTimeStamp": 1572739234821,
+            "jwt": "FAKE_JWT",
+          },
+          "type": "API__SET_TOKEN",
+        },
+        "channel": undefined,
+      },
+      "type": "PUT",
+    },
+    Object {
+      "@@redux-saga/IO": true,
+      "combinator": false,
+      "payload": Object {
+        "action": Object {
+          "correlationId": "CORRELATION_ID",
+          "payload": Object {
+            "context": "API.SAGAS",
+            "date": Object {},
+            "details": Array [
+              Object {
+                "token": Object {
+                  "expiresInSeconds": 3600,
+                  "expiryTimeStamp": 1572739234821,
+                  "jwt": "**KE_JWT",
+                },
+              },
+            ],
+            "level": "INFO",
+            "message": "API Token successfully updated. token=*KE_JWT, ts=1572739234821, expires=3600",
+          },
+          "type": "LOGGING__SUBMIT",
+        },
+        "channel": undefined,
+      },
+      "type": "PUT",
+    },
+  ],
+  "select": Array [
+    Object {
+      "@@redux-saga/IO": true,
+      "combinator": false,
+      "payload": Object {
+        "args": Array [],
+        "selector": "@@redux-saga-test-plan/json/function/<anonymous>",
+      },
+      "type": "SELECT",
+    },
+  ],
+}
+`;

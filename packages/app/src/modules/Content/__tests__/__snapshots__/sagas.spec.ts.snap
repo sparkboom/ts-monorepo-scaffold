@@ -1,0 +1,85 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Content > Sagas Load Content Saga should match the snapshot if content was successfully set 1`] = `
+Object {
+  "call": Array [
+    Object {
+      "@@redux-saga/IO": true,
+      "combinator": false,
+      "payload": Object {
+        "args": Array [
+          Object {
+            "correlationId": "CORRELATION_ID",
+            "type": "CONTENT__LOAD",
+          },
+        ],
+        "context": null,
+        "fn": "@@redux-saga-test-plan/json/function/getWebApi",
+      },
+      "type": "CALL",
+    },
+    Object {
+      "@@redux-saga/IO": true,
+      "combinator": false,
+      "payload": Object {
+        "args": Array [],
+        "context": Object {
+          "content": "@@redux-saga-test-plan/json/function/content",
+        },
+        "fn": "@@redux-saga-test-plan/json/function/content",
+      },
+      "type": "CALL",
+    },
+  ],
+  "put": Array [
+    Object {
+      "@@redux-saga/IO": true,
+      "combinator": false,
+      "payload": Object {
+        "action": Object {
+          "correlationId": "CORRELATION_ID",
+          "payload": Object {
+            "resources": Array [
+              Object {
+                "context": "HELP_OPTIONS",
+                "id": "aa3add48-aa8a-456c-afa0-8037d93f822c",
+                "textKey": "resource.help.a",
+                "url": "http://www.example.com/documentation/1",
+              },
+              Object {
+                "context": "HELP_OPTIONS",
+                "id": "f042dbdb-bab4-4236-a6ce-38fa4297dc52",
+                "textKey": "resource.help.b",
+                "url": "http://www.example.com/documentation/1",
+              },
+            ],
+          },
+          "type": "CONTENT__SET",
+        },
+        "channel": undefined,
+      },
+      "type": "PUT",
+    },
+    Object {
+      "@@redux-saga/IO": true,
+      "combinator": false,
+      "payload": Object {
+        "action": Object {
+          "correlationId": "CORRELATION_ID",
+          "payload": Object {
+            "details": null,
+            "message": null,
+            "relatedAction": Object {
+              "correlationId": "CORRELATION_ID",
+              "type": "CONTENT__LOAD",
+            },
+          },
+          "type": "CONTENT__LOAD_SUCCESS",
+        },
+        "channel": undefined,
+      },
+      "type": "PUT",
+    },
+  ],
+}
+`;
