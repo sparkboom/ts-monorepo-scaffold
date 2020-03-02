@@ -1,0 +1,45 @@
+{
+  "name": "@%%APP_NAME%%/ux",
+  "version": "0.0.0",
+  "description": "React components with storybooks",
+  "scripts": {
+    "start:sb": "start-storybook -p 6006",
+    "build:sb": "build-storybook"
+  },
+  "main": "src/index.ts",
+  "author": "%%AUTHOR%%",
+  "license": "%%LICENSE%%",
+  "peerDependencies": {
+    "@emotion/core": "^10.0.22",
+    "@emotion/styled": "^10.0.22",
+    "@salesforce-ux/design-system": "^2.10.2",
+    "@salesforce/design-system-react": "^0.10.14",
+    "lodash-es": "^4.17.15",
+    "react": "^16.9.0",
+    "react-intl": "^3.1.6"
+  },
+  "devDependencies": {
+    "@storybook/addon-a11y": "^5.2.3",
+    "@storybook/addon-actions": "^5.2.3",
+    "@storybook/addon-knobs": "^5.2.4",
+    "@storybook/addon-links": "^5.2.3",
+    "@storybook/addon-storyshots": "^5.2.8",
+    "@storybook/addon-viewport": "^5.2.4",
+    "@storybook/react": "^5.2.3",
+    "@storybook/source-loader": "^5.2.4",
+    "@storybook/theming": "^5.2.4",
+    "add": "^2.0.6",
+    "copy-webpack-plugin": "^5.0.4",
+    "react-docgen-typescript-loader": "^3.3.0",
+    "react-select": "^3.0.8",
+    "ts-loader": "^6.1.0",
+    "yarn": "^1.19.1"
+  },
+  "dependencies": {
+    "babel-plugin-emotion": "^10.0.22",
+    "babel-plugin-macros": "^2.6.1",
+    "calculate-size": "^1.1.1",
+    "faker": "^4.1.0",
+    "server": "^1.0.22"
+  }
+}

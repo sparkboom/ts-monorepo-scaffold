@@ -1,0 +1,29 @@
+{
+  "name": "@%%APP_NAME%%/api",
+  "version": "0.0.0",
+  "description": "%%APP_TITLE%% - API",
+  "scripts": {
+    "build:postman": "shx rm -rf dist-postman && node src/postman-gen",
+    "build": "shx rm -rf dist && openapi-generator generate -i api.yaml -g typescript-fetch -o dist -c generate.config.json --model-name-prefix Api",
+    "build:dev": "yarn build",
+    "build:prod": "yarn build",
+    "build:doc": "shx rm -rf dist-doc && npx redoc-cli bundle api.yaml -o dist-doc/index.html",
+    "clean": "shx rm -rf dist && rm -rf dist-doc && rm -rf dist-postman;",
+    "lint": "lint-openapi ./api.yaml"
+  },
+  "authors": [
+    "%%AUTHOR%%"
+  ],
+  "main": "dist/src/index.ts",
+  "license": "%%LICENSE%%",
+  "dependencies": {
+    "@openapitools/openapi-generator-cli": "^0.0.19-4.1.2",
+    "openapi-to-postmanv2": "^0.0.18",
+    "redoc": "^2.0.0-rc.14",
+    "server": "^1.0.22",
+    "ts-loader": "^6.1.0"
+  },
+  "devDependencies": {
+    "ibm-openapi-validator": "^0.16.0"
+  }
+}

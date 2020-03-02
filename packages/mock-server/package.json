@@ -1,0 +1,25 @@
+{
+  "name": "@%%APP_NAME%%/mock-server",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index",
+    "start:dev": "yarn run start",
+    "start:prod": "yarn run start"
+  },
+  "author": "%%AUTHOR%%",
+  "license": "%%LICENSE%%",
+  "dependencies": {
+    "arrayify": "^1.0.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "faker": "^4.1.0",
+    "jsonwebtoken": "^8.5.1",
+    "nodemon": "^1.19.3",
+    "parrot-friendly": "^3.0.0",
+    "parrot-middleware": "^3.1.0",
+    "request": "^2.88.0",
+    "server": "^1.0.22"
+  }
+}

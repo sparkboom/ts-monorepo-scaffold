@@ -1,0 +1,13 @@
+{
+  "tasks": {
+    "taskUpdateFrequencyMs": 30000
+  },
+  "endpoints": {
+    "query": {
+      "baseUrl": "${QUERY_BASE_URL}"
+    },
+    "command": {
+      "baseUrl": "${CMD_BASE_URL}"
+    }
+  }
+}

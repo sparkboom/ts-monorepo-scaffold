@@ -1,0 +1,93 @@
+openapi: 3.0.0
+info:
+  version: 1.0.0
+  title: "%%APP_TITLE%%"
+  description: "%%APP_DESCRIPTION%%"
+servers:
+  - url: "http://qa.%%APP_NAME%%.com/"
+    description: "%%APP_TITLE%% API"
+    variables:
+      environment:
+        default: '%%APP_NAME%%.com'
+        enum:
+          - '%%APP_NAME%%.com'                  # Production
+          - 'stage.%%APP_NAME%%.com'            # Stage
+          - 'qa.%%APP_NAME%%.com'               # QA
+          - '127.0.0.1:8080'                    # Local Docker
+security:
+  - BearerAuth: []
+paths:
+
+  '/status':
+    get:
+      operationId: getStatus
+      tags: [command, client-cmd]
+      summary: GET > Status
+      description: ...
+      responses:
+        '200':
+          description: Provides app status
+          content:
+            application/json:
+              schema:
+                type: string
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+        '500':
+          $ref: '#/components/responses/InternalServerError'
+
+components:
+  securitySchemes:
+    BearerAuth:
+      type: http
+      scheme: bearer
+    None:
+      type: http
+      scheme: basic
+  schemas:
+    Example:
+      type: string
+      enum:
+      - Yes
+      - No
+  responses:
+    GenericSuccess:
+      description: The resource has been successfully retrieved
+      content:
+        application/json:
+          schema:
+            type: object
+            additionalProperties: true
+    InternalServerError:
+      description: Any unexpected error server-side. Consider browsing logs to diagnose.
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Error'
+    NotFound:
+      description: The specified resource was not found
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Error'
+    Unauthorized:
+      description: Unauthorized
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Error'
+  headers:
+    'X-CorrelationId':
+      schema:
+        type: string
+        format: uuid
+      description: Use this correlation id when querying logs in Splunk
+    'X-DurationMilliseconds':
+      schema:
+        type: number
+      description: Time spent processing request in milliseconds.
+    'X-RequestId':
+      schema:
+        type: string
+        format: uuid
+      description: Use this when querying logs in Splunk

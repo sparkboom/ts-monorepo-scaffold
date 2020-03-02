@@ -1,0 +1,8 @@
+{
+  "npmName": "%%APP_NAME%%/api-ts-fetch",
+  "npmVersion": "1.0.0",
+  "snapshot" : false,
+  "supportsES6": true,
+  "typescriptThreePlus": true,
+  "withInterfaces": true
+}

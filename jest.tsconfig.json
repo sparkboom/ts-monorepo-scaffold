@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "jsx": "react",
+    "target": "es5",
+    "module": "commonjs",
+    "lib": [
+      "dom",
+      "esnext"
+    ],
+    "strict": true,
+    "declaration": true,
+    "outDir": "dist",
+    "sourceMap": true,
+    "allowJs": true,
+    "esModuleInterop": true
+  },
+  "include": [
+    "packages/api/src/**/*",
+    "packages/app/src/**/*",
+    "packages/ux/src/**/*",
+    "./packages/ux/src/**/*",
+    "./node_modules/"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
